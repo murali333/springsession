@@ -1,0 +1,24 @@
+<h2>AngularJs ng-click Events Example</h2>
+<input type="button" style="cursor:pointer" value="Click Here" ng-inti ="clkcount=0;"  ng-click ="clkcount=clkcount+1" /><br /><br />
+<span style="color:Red">Number of Times you Clicked: {{clkcount}}</span></br>
+
+<h2>AngularJS Tables with CSS Styles</h2>
+<table>
+<tr>
+<td>id</td>
+<td>city</td>
+</tr>
+<tr ng-repeat="data in listdata">
+<td>{{data.id}}</td>
+<td>{{data.city}}</td>
+</tr>
+</table>
+</br>
+
+<h2>AngularJS Table with ng-table Example</h2>
+<table ng-table ="usersTable" class="table table-striped">
+<tr ng-repeat="user in listdata">
+<td data-title="'id'">{{user.id}}</td>
+<td data-title="'city'">{{user.city}}</td>
+
+</tr>
